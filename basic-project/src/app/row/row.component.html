@@ -1,0 +1,16 @@
+<div class="flex1 table-content">
+    <div>{{ rowData.rollNo }}</div>
+    <div>{{ rowData.name }}</div>
+    <div>{{ rowData.school }}</div>
+    <div>
+        <button type="primary" (click)="showFeedBack()">
+            {{ visible ? "Hide" : "Show" }}
+        </button>
+    </div>
+</div>
+<ng-container *ngIf="visible">
+    <div *ngFor="let row of feedBack">
+        <div class="border-box">
+            <div class="flex1"><span>Remarks : {{row.remarks}}</span></div>
+        </div></div>
+</ng-container>

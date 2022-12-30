@@ -1,0 +1,7 @@
+.flex1{
+    display:flex;
+    justify-content :space-between;
+}
+.table-content{
+    padding: 10px 0 10px 0;
+}
